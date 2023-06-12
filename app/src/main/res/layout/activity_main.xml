@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+        <com.carousel.ImageCarousel
+            android:id="@+id/carousel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="22dp"
+            app:autoPlay="true"
+            app:autoPlayDelay="3000"
+            app:autoWidthFixing="true"
+            app:bottomShadowAlpha="0.6"
+            app:bottomShadowHeight="64dp"
+            app:captionMargin="0dp"
+            app:captionTextSize="14sp"
+            app:carouselBackground="@color/white"
+            app:carouselRadius="20dp"
+            app:carouselElevation="0dp"
+            app:carouselGravity="CENTER"
+            app:carouselPadding="0dp"
+            app:carouselPaddingBottom="0dp"
+            app:carouselPaddingEnd="0dp"
+            app:carouselPaddingStart="0dp"
+            app:carouselPaddingTop="0dp"
+            app:carouselType="BLOCK"
+            app:imagePlaceholder="@drawable/ic_placeholder_background_image"
+            app:imageScaleType="fitXY"
+            app:indicatorMargin="0dp"
+            app:infiniteCarousel="true"
+            app:layout_constraintDimensionRatio="1:.8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:nextButtonId="@id/btn_next"
+            app:nextButtonLayout="@layout/next_button_layout"
+            app:nextButtonMargin="4dp"
+            app:previousButtonId="@id/btn_previous"
+            app:previousButtonLayout="@layout/previous_button_layout"
+            app:previousButtonMargin="4dp"
+            app:scaleOnScroll="false"
+            app:scalingFactor="0.15"
+            app:showBottomShadow="false"
+            app:showCaption="true"
+            app:showIndicator="true"
+            app:showNavigationButtons="false"
+            app:showTopShadow="false"
+            app:topShadowAlpha="0.6"
+            app:topShadowHeight="32dp"
+            app:touchToPause="true" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
